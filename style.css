@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("./images/fundo\ bege\ escuro.avif");
+    background-position: center;
+}
+header{
+    padding-top: 70px;
+    padding-bottom: 40px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kalam', cursive;
+    gap: 15px;
+}
+
+header img{
+    height: inherit;
+    padding: 0 5px;
+}
+
+header a h1{
+    font-size: 2.3rem;
+    color: rgb(212, 156, 71);
+    text-shadow: 2px 2px #111;
+}
+header a {
+    text-decoration: none;
+}
+
+.input-area{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+.input-container{
+    width: 40%;
+}
+.search-input{
+    font-family: 'Kalam', cursive;
+    color: #111;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 14px;
+    outline: none;
+    border: 0;
+    align-self: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(212, 156, 71, 0.684);
+}
+.search-input::placeholder{
+    color: #111;
+    font-size:1.2rem;
+}
+.input-btn-search, .input-btn-return {
+    margin-left: -50px;
+    width: 50px;
+    height:50px;
+    border-radius: 14px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    transition: all .3s ease-in-out;
+}
+.input-btn-search:hover{
+    cursor: pointer;
+    scale: 1.5;
+}
+.input-btn-search .searchBook{
+    fill:#111;
+    scale: 1.5;
+    display: inline-block;
+}
+.input-btn-return .return{
+    fill:#111;
+    scale: 1.5;
+    display: inline-block;
+}
+.input-btn-return{
+    display: none;
+}
+.input-btn-return:hover{
+    cursor: pointer;
+    scale: 1.5;
+}
+
+section{
+    display: grid;
+    gap: 3vw;
+    grid-template-columns: auto auto auto ;
+    padding: 5vh 5vw;
+    justify-content: space-evenly;
+}
+
+.book-container {
+    max-width: 500px;
+    width: auto;
+    height: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px 10px;
+    font-family: 'Kalam', cursive;
+    border-radius:20px;
+    background-color: #f1e8d07e;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.book-container img{
+    max-height: 350px;
+}
+.book-container h3{
+    font-size: 1.7rem;
+    text-align: center;
+}
+.book-container h4{
+    font-size: 1.3rem;
+    text-align: left;
+}
+.book-container p{
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+.rate {
+    display: flex;
+    gap: 6px;
+    padding: 5px 0;
+}
+
+footer {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-family: 'Kalam', cursive;
+    font-size: 1.2rem;
+}
+
+
+@media screen and (min-width: 1031px) and (max-width:1500px) {
+
+}
+
+@media screen and (min-width: 770px) and (max-width:1030px) {
+    section{
+        grid-template-columns: auto auto;
+        padding: 5vh 3vw;
+    }
+    .book-container img{
+        max-height: 300px;
+    }
+    .book-container h3{
+        font-size: 1.3rem;
+    }
+    .book-container h4{
+        font-size: 1.0rem;
+    }
+    .book-container p{
+        font-size: 1.0rem;
+    }
+    .rate {
+        gap: 4px;
+    }
+    .book-container {
+        gap: 10px 10px;
+    }
+    header img{
+        height: 100px;
+        padding: 0 5px;
+    }
+    header a h1{
+        font-size: 2.2rem;
+    }
+    .input-container{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:769px) {
+    section{
+        grid-template-columns: auto;
+    }
+    .book-container img{
+        max-height: 220px;
+    }
+    .book-container h3{
+        font-size: 1.3rem;
+    }
+    .book-container h4{
+        font-size: 1.0rem;
+    }
+    .book-container p{
+        font-size: 1.0rem;
+    }
+    
+    .rate {
+        gap: 4px;
+    }
+    .book-container {
+        gap: 10px 10px;
+    }
+    header img{
+        height: 75px;
+        padding: 0 5px;
+    }
+    header a h1{
+        font-size: 2.0rem;
+    }
+    .input-container{
+        width: 80%;
+    }
+}
+
